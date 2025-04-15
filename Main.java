@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +36,12 @@ public class Main {
 
         for (int i=0; i<village.size(); i++){
             System.out.println("Villager #"+(i+1)+": "+village.get(i)+"\n");
+        }
+
+        System.out.println("\nTesting Sorting by Age");
+        Collections.sort(village);
+        for (int i = 0; i < village.size(); i++) {
+            System.out.println("Sorted Villager #" + (i + 1) + ": " + village.get(i) + "\n");
         }
     }
 }
